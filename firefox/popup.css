@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 424px;
+    margin: 0;
+    padding: 2rem;
+    font-family: Roboto, sans-serif;
+    color: #282032;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+}
+
+button {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 2rem;
+    margin: .8rem .5rem;
+    aspect-ratio: 1 / 1;
+    outline: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover, button:focus {
+    transition: background-color 300ms ease;
+    background-color: #E0DDE3;
+    border: none;
+    outline: none;
+    /* Demander au prof de dev comment enlever le léger offset des boutons au hover */
+}
+
+button:active {
+    transition: transform 100ms ease;
+    background-color: #CCC5D3;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+small {
+    font-size: .9rem;
+}
+
+small a {
+    color: #541C94;
+    text-decoration: none;
+    position: relative;
+}
+
+small a:focus {
+    outline-offset: .5rem;
+}
+
+small a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    width: 100%;
+    height: 1px;
+    background-color: #541C94;
+}
+
+small a svg {
+    fill: #541C94;
+}
