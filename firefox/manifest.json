@@ -1,11 +1,16 @@
 {
-    "name": "Majuscules accentuées",
+    "name": "Majuscules et caractères",
     "description": "Copier en 1 clic la majuscule accentuée de son choix",
-    "version": "1.0",
+    "version": "1.1",
     "manifest_version": 2,
     "permissions": [
         "activeTab"
     ],
+    "browser_action": {
+        "default_icon": "/images/icon32.png",
+        "default_title": "Majuscules et caractères",
+        "default_popup": "popup.html"
+    },
     "icons": {
         "16": "/images/icon16.png",
         "32": "/images/icon32.png",
